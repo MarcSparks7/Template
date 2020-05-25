@@ -2,21 +2,16 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-.alert-container .col-12 {
-    padding-left: 0;
-    padding-right: 0;
+/* Containers */
+
+.container-wrapper {}
+
+.container-wrapper--red {
+    background-color: #f05f40;
+    color: white;
 }
 
-.site-wide-alert {
-    color: #544600;
-    background-color: #eec802;
-    border-color: #eec802;
-    padding: 5px 15px;
-    margin-bottom: 0;
-    border: 1px solid transparent;
-    border-radius: 0;
-}
-
+.alert-container {}
 
 .callout-container {
     height: 100vh;
@@ -43,6 +38,11 @@ body {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
+.content-container {
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
 /* Navbar */
 
 .navalert-container {
@@ -52,6 +52,12 @@ body {
     z-index: 1;
     padding-left: 0;
     padding-right: 0;
+}
+
+.green {
+    background-color: green;
+    border-radius: 15px;
+    color: white;
 }
 
 .navbar {
@@ -74,7 +80,6 @@ body {
 }
 
 
-/* Jumbotron */
 
 .jumbotron {
     background-color: transparent;
@@ -98,7 +103,7 @@ body {
     color: #d0d0d0;
 }
 
-/* Block dividers */
+
 
 .block-divider {
     width: 75px;
@@ -111,11 +116,13 @@ body {
     background-color: #f05f40;
 }
 
+.block-divider--white {
+    background-color: white;
+}
+
 .block-divider--short {
     width: 35px;
 }
-
-/* Buttons */
 
 .btn--cta {
     font-weight: bold;
@@ -136,4 +143,57 @@ body {
     background-color: #df4929;
     border-color: #df4929;
     color: white;
+}
+
+
+.alert-container .col-12 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.site-wide-alert {
+    color: #544600;
+    background-color: #eec802;
+    border-color: #eec802;
+    padding: 5px 15px;
+    margin-bottom: 0;
+    border: 1px solid transparent;
+    border-radius: 0;
+}
+
+
+
+.page-header {
+    margin-bottom: 0;
+    border-bottom: 0;
+    text-align: center;
+}
+
+.page-header h2 {
+    margin-top: 0;
+}
+
+.quotes .page-header {
+    margin-bottom: 25px;
+}
+
+.feature {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.feature i {
+    margin-bottom: 20px;
+    font-size: 45px;
+    line-height: 45px;
+}
+
+.feature .btn {
+    background-color: white;
+    border-color: white;
+    border-radius: 15px;
+    min-width: 100px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #f05f40;
 }
